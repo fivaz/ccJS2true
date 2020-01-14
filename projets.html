@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projets</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+      section {
+        border: 1px solid grey;
+        padding: 10px;
+        width: 80%;
+        margin: 10px;
+      }
+      td {
+        padding: 2px;
+        cursor: pointer;
+      }
+      tr:hover {
+          background-color: #ffff99;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Répartition des projets dans les universités</h2>
+      <section>
+        <h3>Recherche</h3>
+        <input type="text" id="ipt-project" placeholder="Projet">
+        <input type="text" id="ipt-university" placeholder="Université">
+        <input type="text" id="ipt-nb-votes" placeholder="Nb. de votes min.">
+        <button id="btn-clear-filters">Supprimer filtres</button>
+        <br/>
+        <h4>Liste des projets (<span id="nb-projects"></span>)</h4>
+        <button id="btn-previous-page">&lt;</button>
+        <span id=""></span>
+        <button id="btn-next-page">&gt;</button>
+        <table id="tb-projects"></table>
+        <br>
+      </section>
+      <section>
+        <h4>Liste des contacts</h4>
+        <button id="btn-clear-contacts">Supprimer</button>
+        <ul id="lst-contacts"></ul>
+      </section>
+	  
+	  
+	  <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+	  </script>
+	
+	  <script src="projets.js"></script>
+	  
+  </body>
+</html>
